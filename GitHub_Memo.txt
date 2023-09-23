@@ -1,0 +1,8 @@
+L : local   R : remote
+
+
+Working directory(L)
+↓ add
+index(L)
+↓ commit
+Work tree(L)
