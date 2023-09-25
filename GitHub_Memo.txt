@@ -1,8 +1,14 @@
 L : local   R : remote
 
-
 Working directory(L)
 ↓ add
 index(L)
 ↓ commit
 Work tree(L)
+↓ push
+Work tree(r)　Vの状態
+↓ marge
+Work tree(r)　Iの状態
+↓ fetch(Work tree(r)を丸ごとコピー)
+Work tree(l) VIのWTをfetchしたらHEADはVの根元の角
+↓ checkout  HEADの位置をリモートと合わせる
