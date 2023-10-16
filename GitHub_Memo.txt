@@ -1,3 +1,4 @@
+[構造]
 L : local   R : remote
 
 Working directory(L)
@@ -12,3 +13,30 @@ Work tree(r)　Iの状態
 ↓ fetch(Work tree(r)を丸ごとコピー)
 Work tree(l) VIのWTをfetchしたらHEADはVの根元の角
 ↓ checkout  HEADの位置をリモートと合わせる
+
+
+[GitHub一連の流れ]
+・ファイルを作りたいリポジトリに移動する
+・「code .」でVSCを立ち上げてファイルを作り、中身を編集
+・「command + S」で保存
+・「git add (ファイル名)」
+・「git status」で ↑ が緑色になってることを確認
+・「git commit -v」
+・「git log --oneline --graph」で枝分かれが確認できる
+・「git push origin HEAD:refs/heads/(設定)/(わかりやすい名前) -f」
+・
+
+[新規リポジトリの作り方]
+・HOME左上のNEW
+・リポジトリ名を記入
+・そのリポジトリの説明を記入
+・公開か非公開かを選択
+・このリポジトリを初期化するを選択
+・下二つは大体NOで良い
+
+[メモ]
+・リポジトリ = ディレクトリ
+・コミット = ファイルを追加する
+・「git checkout 〇〇」で〇〇をheadにする
+
+    
